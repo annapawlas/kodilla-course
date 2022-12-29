@@ -5,12 +5,12 @@ import java.util.List;
 
 public class AdvStatistics {
 
-    int usersNumber;
-    int postsNumber;
-    int commentsNumber;
-    double averagePostsNumberPerUser;
-    double averageCommentsNumberPerUser;
-    double averageCommentsNumberPerPost;
+    private int usersNumber;
+    private int postsNumber;
+    private int commentsNumber;
+    private double averagePostsNumberPerUser;
+    private double averageCommentsNumberPerUser;
+    private double averageCommentsNumberPerPost;
 
     void calculateAdvStatistics(Statistics statistics){
 
@@ -52,7 +52,17 @@ public class AdvStatistics {
             averageCommentsNumberPerPost = commentsNumber/postsNumber;
         }
 
+    }
+    public double getAveragePostsNumberPerUser() {
+        return averagePostsNumberPerUser;
+    }
 
+    public double getAverageCommentsNumberPerUser() {
+        return averageCommentsNumberPerUser;
+    }
+
+    public double getAverageCommentsNumberPerPost() {
+        return averageCommentsNumberPerPost;
     }
 
 

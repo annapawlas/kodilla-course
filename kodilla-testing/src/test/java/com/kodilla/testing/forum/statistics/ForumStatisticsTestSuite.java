@@ -60,7 +60,7 @@ public class ForumStatisticsTestSuite {
             advStatistics.calculateAdvStatistics(statisticsMock);
 
             //Then
-            Assertions.assertEquals(Double.NaN,advStatistics.averagePostsNumberPerUser);
+            Assertions.assertEquals(Double.NaN,advStatistics.getAveragePostsNumberPerUser());
         }
         @Test
         @DisplayName("0 posts and 100 users")
@@ -76,7 +76,7 @@ public class ForumStatisticsTestSuite {
             advStatistics.calculateAdvStatistics(statisticsMock);
 
             //Then
-            Assertions.assertEquals(0,advStatistics.averagePostsNumberPerUser);
+            Assertions.assertEquals(0,advStatistics.getAveragePostsNumberPerUser());
         }
         @Test
         @DisplayName("1000 posts and 0 users")
@@ -92,7 +92,7 @@ public class ForumStatisticsTestSuite {
             advStatistics.calculateAdvStatistics(statisticsMock);
 
             //Then
-            Assertions.assertEquals(Double.POSITIVE_INFINITY,advStatistics.averagePostsNumberPerUser);
+            Assertions.assertEquals(Double.POSITIVE_INFINITY,advStatistics.getAveragePostsNumberPerUser());
         }
         @Test
         @DisplayName("1000 posts and 100 users")
@@ -108,7 +108,7 @@ public class ForumStatisticsTestSuite {
             advStatistics.calculateAdvStatistics(statisticsMock);
 
             //Then
-            Assertions.assertEquals(10,advStatistics.averagePostsNumberPerUser);
+            Assertions.assertEquals(10,advStatistics.getAveragePostsNumberPerUser());
         }
 
     }
@@ -131,7 +131,7 @@ public class ForumStatisticsTestSuite {
             advStatistics.calculateAdvStatistics(statisticsMock);
 
             //Then
-            Assertions.assertEquals(Double.NaN,advStatistics.averageCommentsNumberPerUser);
+            Assertions.assertEquals(Double.NaN,advStatistics.getAverageCommentsNumberPerUser());
         }
         @Test
         @DisplayName("0 comments and 100 users")
@@ -147,7 +147,7 @@ public class ForumStatisticsTestSuite {
             advStatistics.calculateAdvStatistics(statisticsMock);
 
             //Then
-            Assertions.assertEquals(0,advStatistics.averageCommentsNumberPerUser);
+            Assertions.assertEquals(0,advStatistics.getAverageCommentsNumberPerUser());
         }
     }
 
@@ -169,7 +169,7 @@ public class ForumStatisticsTestSuite {
             advStatistics.calculateAdvStatistics(statisticsMock);
 
             //Then
-            Assertions.assertEquals(7 / 15, advStatistics.averageCommentsNumberPerPost);
+            Assertions.assertEquals(7 / 15, advStatistics.getAverageCommentsNumberPerPost());
         }
 
         @Test
@@ -186,7 +186,7 @@ public class ForumStatisticsTestSuite {
             advStatistics.calculateAdvStatistics(statisticsMock);
 
             //Then
-            Assertions.assertEquals(15 / 7, advStatistics.averageCommentsNumberPerPost);
+            Assertions.assertEquals(15 / 7, advStatistics.getAverageCommentsNumberPerPost());
         }
     }
 
