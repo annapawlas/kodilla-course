@@ -15,7 +15,7 @@ public class ExceptionHandlingTestSuite {
         //When & Then
         Assertions.assertAll(
                 () -> Assertions.assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(2,2)),
-                () -> Assertions.assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(2,1.5)),
+                () -> Assertions.assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(0.5,1.5)),
                 () -> Assertions.assertThrows(Exception.class, () -> secondChallenge.probablyIWillThrowException(0.9,2))
 
         );
