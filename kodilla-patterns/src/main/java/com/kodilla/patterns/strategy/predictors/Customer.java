@@ -1,6 +1,4 @@
-package com.kodilla.patterns.strategy;
-
-import com.kodilla.patterns.strategy.predictors.BuyPredictor;
+package com.kodilla.patterns.strategy.predictors;
 
 public sealed class Customer
     permits CorporateCustomer, IndividualCustomer, IndividualYoungCustomer{

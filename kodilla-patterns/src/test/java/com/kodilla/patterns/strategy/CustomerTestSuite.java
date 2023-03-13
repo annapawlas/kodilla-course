@@ -1,6 +1,6 @@
 package com.kodilla.patterns.strategy;
 
-import com.kodilla.patterns.strategy.predictors.AggressivePredictor;
+import com.kodilla.patterns.strategy.predictors.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
