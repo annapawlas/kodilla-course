@@ -1,7 +1,5 @@
 package com.kodilla.good.patterns.flights;
 
-import org.springframework.cglib.core.Local;
-
 import java.time.LocalDateTime;
 import java.util.*;
 

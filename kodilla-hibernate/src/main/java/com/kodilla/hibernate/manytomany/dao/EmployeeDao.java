@@ -11,6 +11,7 @@ import java.util.List;
 @Transactional
 @Repository
 public interface EmployeeDao extends CrudRepository<Employee, Integer> {
-
     List<Employee> retrieveEmployeeByLastname(@Param("LASTNAME")String lastname);
+
+    List<Employee> retrieveEmployeeByPartOfName(@Param("FRAGMENT") String fragment);
 }
