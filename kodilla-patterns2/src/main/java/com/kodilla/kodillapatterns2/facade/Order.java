@@ -19,7 +19,6 @@ public class Order {
         this.productService = productService;
     }
 
-
     public BigDecimal calculateValue() {
         BigDecimal sum = BigDecimal.ZERO;
         for (Item item : items) {
