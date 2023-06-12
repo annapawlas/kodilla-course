@@ -15,6 +15,7 @@ public class FacebookTestingApp {
     public static final String XPATH_YEAR = "//div[@class=\"_5k_5\"]/span/span/select[3]";
 
     public static void main(String[] args) {
+
         WebDriver webDriver = WebDriverConfig.getDriver(WebDriverConfig.CHROME);
         webDriver.get("https://www.facebook.com/");
 
