@@ -17,6 +17,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.seleniumhq.selenium:selenium-java:3.5.3'
 	testImplementation 'org.seleniumhq.selenium:selenium-java:3.5.3'
+	implementation group: 'org.seleniumhq.selenium', name: 'selenium-devtools-v110', version: '4.8.1'
 }
 
 tasks.named('test') {
